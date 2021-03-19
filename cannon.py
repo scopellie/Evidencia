@@ -79,7 +79,7 @@ def move():
             #targets.remove(target)
             return
 
-    ontimer(move, 50)
+    ontimer(move, 20)
 
 setup(420, 420, 370, 0)
 hideturtle()
