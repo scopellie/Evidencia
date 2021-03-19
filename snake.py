@@ -15,7 +15,7 @@ from freegames import square, vector
   
 
 
-bgcolor("midnightblue")
+bgcolor("midnightblue")#added a monsta background color fashaw
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
@@ -36,7 +36,7 @@ def move():
     head.move(aim)
 
     if not inside(head) or head in snake:
-        square(head.x, head.y, 9, 'olive')
+        square(head.x, head.y, 9, 'olive')#changed color from red to olive
         update()
         return
 
@@ -52,9 +52,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'ghostwhite')
+        square(body.x, body.y, 9, 'ghostwhite')#changed color from black to ghost white
 
-    square(food.x, food.y, 9, 'deeppink')
+    square(food.x, food.y, 9, 'deeppink')#changed color from green to deep pink
     update()
     ontimer(move, 100)
 
@@ -66,5 +66,6 @@ onkey(lambda: change(10, 0), 'd')
 onkey(lambda: change(-10, 0), 'a')
 onkey(lambda: change(0, 10), 'w')
 onkey(lambda: change(0, -10), 's')
+#changed movement from arrows to wasd
 move()
 done()
