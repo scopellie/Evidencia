@@ -14,6 +14,7 @@ from turtle import *
 from freegames import vector
 
 bgcolor("azure")
+title("CANNON")
 
 ball = vector(-200, -200)
 speed = vector(0, 0)
