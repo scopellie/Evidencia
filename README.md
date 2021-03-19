@@ -17,3 +17,6 @@ In this case, we decided to modify the code for the classic game of snake and th
 # listado de requerimientos para uso de software
 
 To use this software in conjunction you need to have installed python 3, github y freegames module
+
+# Video final de la evidencia
+https://www.youtube.com/watch?v=wSMqrCnTl0o
