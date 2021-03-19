@@ -14,7 +14,7 @@ from random import randrange
 from freegames import square, vector
   
 
-
+title("Snake game")
 bgcolor("midnightblue")#added a monsta background color fashaw
 
 food = vector(0, 0)
