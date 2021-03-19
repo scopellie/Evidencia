@@ -38,6 +38,8 @@ def move():
     if not inside(head) or head in snake:
         square(head.x, head.y, 9, 'olive')#changed color from red to olive
         update()
+        write("F", font=("Sans", 84, "bold"))
+        bgcolor("black")
         return
 
     snake.append(head)
