@@ -40,6 +40,7 @@ def move():
         update()
         write("F", font=("Sans", 84, "bold"))
         bgcolor("black")
+        #added F message and changes background color to black on death
         return
 
     snake.append(head)
@@ -58,7 +59,7 @@ def move():
 
     square(food.x, food.y, 9, 'deeppink')#changed color from green to deep pink
     update()
-    ontimer(move, 50)
+    ontimer(move, 50)#reduced delay between movements
 
 setup(420, 420, 370, 0)
 hideturtle()
