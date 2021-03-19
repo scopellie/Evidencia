@@ -56,7 +56,7 @@ def move():
 
     square(food.x, food.y, 9, 'deeppink')#changed color from green to deep pink
     update()
-    ontimer(move, 100)
+    ontimer(move, 50)
 
 setup(420, 420, 370, 0)
 hideturtle()
