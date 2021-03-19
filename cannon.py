@@ -13,8 +13,8 @@ from random import randrange
 from turtle import *
 from freegames import vector
 
-bgcolor("azure")
-title("CANNON")
+bgcolor("azure")#added background color
+title("CANNON")#added title
 
 ball = vector(-200, -200)
 speed = vector(0, 0)
@@ -38,11 +38,11 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(12, "tomato")
+        dot(12, "tomato")#changed from blue to tomato and reduced size from 20 to 12
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(3, 'indigo')
+        dot(3, 'indigo')#changed from red to indigo and reduced size from 6 to 3
 
     update()
 
@@ -56,11 +56,11 @@ def move():
 
     # Move the existing targets
     for target in targets:
-        target.x -= 1
+        target.x -= 1#increased target speeds
 
     # Move the cannon shot
     if inside(ball):
-        speed.y -= 0.20
+        speed.y -= 0.20#reduced gravity by changing y speed
         ball.move(speed)
 
     # Make a copy of the existing target list before redrawing
@@ -80,7 +80,7 @@ def move():
             #targets.remove(target)
             return
 
-    ontimer(move, 20)
+    ontimer(move, 20)#reduced movement delay
 
 setup(420, 420, 370, 0)
 hideturtle()
